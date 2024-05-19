@@ -1,8 +1,26 @@
 import React from "react";
 
-const App = () => {
-  
-  return <div>Hello World!</div>
+import { Container, H1, Image, ContainerItens, InputLabel, Input, Button } from './styles';
+
+function App() {
+
+  return (
+    <Container>
+      <Image />
+      <ContainerItens>
+        <H1>Olá!</H1>
+
+        <InputLabel>Nome</InputLabel>
+        <Input placeholder="Nome"/>
+
+        <InputLabel>Idade</InputLabel>
+        <Input placeholder="Idade"/>
+
+        <Button>Cadastrar</Button>
+
+      </ContainerItens>
+    </Container>
+  );
 }
 
-export default App
+export default App;
